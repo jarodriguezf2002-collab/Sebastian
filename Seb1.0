@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<!-- Seguimiento de formatos UPS 300 · Grupo Leti. Guarda este archivo como index.html junto a logo-grupo-leti.png y ábrelo en el navegador. -->
+<html lang="es"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0f2f6b">
+<title>Grupo Leti · Formatos UPS 300</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light;--bg:#fff;--card:#fff;--tx:#14213d;--mut:#5b6b88;--bd:#dbe3f0;--navy:#0f2f6b;--pri:#1f5fe0;--red:#b72b34;--ok:#d8f3e2;--warn:#fde7a8;--no:#e7ebf2;--mq:#d7e5ff;--bad:#ffd9dd}
+*{box-sizing:border-box}[hidden]{display:none!important}
+html,body{height:100%}
+body{margin:0;background:var(--bg);color:var(--tx);font:15px/1.45 Poppins,system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--card);z-index:30}
+.fb{color:var(--red);font-size:20px}.logo{display:inline-block}.logo img{display:block;height:42px;width:auto}
+#login{min-height:100%;display:flex;align-items:center;justify-content:center;padding:16px}
+.lc{background:var(--card);border:1px solid var(--bd);border-radius:18px;padding:26px;width:100%;max-width:400px}
+.lc .logo img{height:54px}.lc h1{font-size:18px;margin:14px 0 4px;color:var(--navy)}
+#app{display:grid;grid-template-columns:230px 1fr;min-height:100%}
+aside{background:var(--navy);color:#fff}
+aside .in{position:sticky;top:env(safe-area-inset-top,0px)}
+aside .lg{background:var(--card);padding:16px 18px}
+aside nav{padding:14px 10px}
+aside nav button{display:flex;align-items:center;gap:10px;width:100%;border:0;background:none;color:#fff;font:500 13px Poppins,system-ui,sans-serif;padding:11px 12px;border-radius:10px;margin-bottom:4px;text-align:left;cursor:pointer}
+aside nav button.on{background:var(--pri)}
+aside nav button span{font-size:17px}
+.slg{padding:24px 18px;font-size:12px;opacity:.8}
+main{min-width:0}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--card);border-bottom:1px solid var(--bd);padding:10px 16px;display:flex;align-items:center;gap:10px}
+header .logo{display:none}
+#bell{position:relative;width:46px;flex:0 0 46px;padding:0;border-radius:50%;font-size:18px}
+#bell b{position:absolute;top:-2px;right:-2px;background:var(--red);color:#fff;font-size:11px;min-width:18px;height:18px;border-radius:9px;line-height:18px;padding:0 4px}
+.me{font-size:12px;line-height:1.2;text-align:right;white-space:nowrap}.me small{color:var(--mut);display:block}
+#dt{font-size:12px;color:var(--mut);white-space:nowrap}
+.pad{padding:16px;max-width:1100px}
+h2{font-size:20px;margin:2px 0 14px;color:var(--navy)}
+h3{font-size:14px;margin:0 0 8px;color:var(--navy)}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:16px;margin-bottom:14px}
+label{display:block;font-size:12px;color:var(--mut);margin:12px 0 4px}
+select,input,textarea,button{width:100%;font:inherit;min-height:46px;padding:9px 12px;border:1px solid var(--bd);border-radius:10px;background:var(--bg);color:var(--tx)}
+input[readonly]{opacity:.8}textarea{min-height:90px}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+button.p{background:var(--pri);color:#fff;border:0;font-weight:600;margin-top:16px;min-height:50px;cursor:pointer}
+button.s{background:var(--navy);color:#fff;border:0;margin-top:10px;cursor:pointer}
+button.t{width:auto;min-height:34px;padding:4px 10px;font-size:12px;margin-right:6px;cursor:pointer}
+button:disabled{opacity:.5}
+.chips{display:flex;gap:10px;overflow-x:auto;margin-bottom:12px;padding-bottom:4px}
+.chip{flex:0 0 auto;border-radius:12px;padding:8px 14px;font-size:12px}.chip b{display:block;font-size:22px}
+.wrap{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:13px;min-width:560px}
+th,td{text-align:left;padding:9px 8px;border-bottom:1px solid var(--bd);white-space:nowrap}
+th{color:var(--mut);font-weight:600;font-size:12px}
+.b{display:inline-block;padding:3px 10px;border-radius:99px;font-size:12px;font-weight:600}
+.ok{background:var(--ok)}.out{background:var(--warn)}.none{background:var(--no)}.mq{background:var(--mq)}.bad{background:var(--bad)}
+.kp{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin-bottom:14px}
+.kp div{background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:14px;font-size:12px;color:var(--mut)}
+.kp b{display:block;font-size:26px;color:var(--navy)}
+.gr{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:14px}
+.br{display:grid;grid-template-columns:96px 1fr 30px;gap:8px;align-items:center;font-size:12px;margin:7px 0}
+.br span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.br div{background:var(--no);border-radius:6px}.br i{display:block;height:12px;border-radius:6px;background:var(--pri)}
+.cols{display:flex;align-items:flex-end;gap:8px;height:130px}
+.cols div{flex:1;height:100%;display:flex;flex-direction:column;justify-content:flex-end;text-align:center;font-size:11px;color:var(--mut)}
+.cols i{display:block;background:var(--pri);border-radius:5px 5px 0 0;min-height:2px}
+.stk{display:flex;height:16px;border-radius:8px;overflow:hidden;margin:6px 0 10px}.stk i{display:block}
+.lg2{font-size:12px;display:flex;flex-wrap:wrap;gap:4px 12px}.lg2 s{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:5px;text-decoration:none}
+ul.al{margin:0;padding-left:18px;font-size:13px}
+#toast{position:fixed;left:12px;right:12px;bottom:calc(env(safe-area-inset-bottom,0px) + 80px);max-width:520px;margin:auto;padding:12px;border-radius:10px;background:var(--navy);color:#fff;text-align:center;display:none;z-index:40}
+#toast.e,#lerr{background:var(--red);color:#fff}
+#lerr{display:none;border-radius:8px;padding:8px 10px;margin-top:10px;font-size:13px}
+.m{color:var(--mut);font-size:12px}
+.sec{display:none}.sec.on{display:block}
+@media (max-width:899px){
+ #app{display:block}
+ aside{position:fixed;left:0;right:0;bottom:0;z-index:25;padding-bottom:env(safe-area-inset-bottom,0px)}
+ aside .in{position:static;display:block}aside .lg,.slg{display:none}
+ aside nav{display:flex;padding:4px}
+ aside nav button{flex-direction:column;gap:0;font-size:10px;padding:6px 2px;text-align:center;margin:0;justify-content:center}
+ header .logo{display:inline-block}header .logo img{height:34px}#dt{display:none}
+ main{padding-bottom:84px}.row{grid-template-columns:1fr}
+}
+</style></head><body>
+
+<div id="login"><div class="lc">
+<div class="logo"><img class="lg" src="logo-grupo-leti.png" alt="Grupo Leti" onerror="this.outerHTML='<b class=fb>GRUPO LETI</b>'"></div>
+<h1>Seguimiento de formatos UPS 300</h1><p id="lmsg" class="m">Conectando…</p>
+<div id="fn"><label>Nombre completo</label><input id="ln" autocomplete="name"></div>
+<label>Usuario</label><input id="lu" autocomplete="username" autocapitalize="none" autocorrect="off">
+<label>Contraseña</label><input id="lp" type="password" autocomplete="current-password">
+<div id="fp2"><label>Repite la contraseña</label><input id="lp2" type="password" autocomplete="new-password"></div>
+<button class="p" id="lgo">Iniciar sesión</button><div id="lerr"></div>
+<p class="m" style="margin-bottom:0">Procesos más ágiles, resultados más fuertes.</p></div></div>
+
+<div id="app" hidden>
+<aside><div class="in"><div class="lg"><div class="logo"><img class="lg" src="logo-grupo-leti.png" alt="Grupo Leti" onerror="this.outerHTML='<b class=fb>GRUPO LETI</b>'"></div></div>
+<nav id="nav"><button data-s="reg" class="on"><span>📝</span>Registro</button><button data-s="est"><span>📍</span>Estado actual</button><button data-s="his"><span>🕘</span>Histórico</button><button data-s="ind"><span>📊</span>Indicadores</button><button data-s="cfg" id="ncfg"><span>⚙️</span>Configuración</button></nav>
+<div class="slg">Procesos más ágiles,<br>resultados más fuertes.</div></div></aside>
+<main>
+<header><div class="logo"><img class="lg" src="logo-grupo-leti.png" alt="Grupo Leti" onerror="this.outerHTML='<b class=fb>GRUPO LETI</b>'"></div><div style="flex:1"></div><button id="bell" title="Alertas">🔔</button><div class="me"><b id="mn"></b><small id="mr"></small></div><div id="dt"></div><button class="t" id="out" style="margin:0">Salir</button></header>
+<div class="pad">
+
+<section class="sec on" id="s-reg"><h2>Registrar movimiento</h2><div class="card">
+<div class="row"><div><label style="margin-top:0">Formato</label><select id="f"></select></div><div><label style="margin-top:0">Pieza</label><select id="p"><option>Ambos</option><option>Formado</option><option>Sellado</option></select></div></div>
+<label>Acción</label><select id="a"></select>
+<div id="mw" hidden><label>Máquina</label><select id="m"></select></div>
+<div class="row"><div><label>Técnico</label><input id="tn" readonly></div><div><label>Origen (ubicación actual)</label><input id="or" readonly></div></div>
+<label>Observaciones (opcional)</label><input id="o" maxlength="200" placeholder="Ingresa observaciones…">
+<button class="p" id="go">Registrar ahora</button></div></section>
+
+<section class="sec" id="s-est"><h2>Estado actual</h2><div class="chips" id="chips"></div>
+<select id="flt" style="margin-bottom:10px"><option value="">Todos</option><option value="alert">Con alerta</option><option value="ret">Retirados</option><option value="ot03">En OT 03-PB</option><option value="ot01">En OT 01-PB</option><option value="maq">En máquina</option><option value="sep">Pares separados</option><option value="none">Sin registro</option></select>
+<div class="card wrap" style="padding:6px"><table><thead><tr><th>Formato</th><th>Pieza</th><th>Ubicación</th><th>Responsable</th><th>Desde</th><th>Par</th></tr></thead><tbody id="st"></tbody></table></div></section>
+
+<section class="sec" id="s-his"><h2>Histórico de movimientos</h2><p class="m" id="hc"></p>
+<div class="card wrap" style="padding:6px"><table><thead><tr><th>Fecha y hora</th><th>Formato</th><th>Pieza</th><th>Acción</th><th>Máquina</th><th>Técnico</th><th>Obs.</th></tr></thead><tbody id="hs"></tbody></table></div>
+<button class="s" id="csv">Descargar histórico (CSV)</button></section>
+
+<section class="sec" id="s-ind"><h2>Indicadores de gestión</h2><div class="kp" id="kp"></div>
+<div class="gr"><div class="card"><h3>Movimientos por técnico</h3><div id="g1"></div></div>
+<div class="card"><h3>Movimientos (últimos 7 días)</h3><div class="cols" id="g2"></div></div>
+<div class="card"><h3>Distribución de acciones</h3><div class="stk" id="g3"></div><div class="lg2" id="g3l"></div></div>
+<div class="card"><h3>Montajes por máquina</h3><div id="g4"></div></div>
+<div class="card"><h3>Formatos con mayor actividad</h3><div id="g5"></div></div>
+<div class="card"><h3>Alertas</h3><ul class="al" id="g6"></ul></div></div></section>
+
+<section class="sec" id="s-cfg"><h2>Configuración</h2>
+<div class="card"><h3>Usuarios</h3><div class="wrap"><table><thead><tr><th>Nombre</th><th>Usuario</th><th>Rol</th><th>Estado</th><th></th></tr></thead><tbody id="ut"></tbody></table></div>
+<div class="row"><div><label>Nombre completo</label><input id="cn"></div><div><label>Usuario</label><input id="cu" autocapitalize="none"></div></div>
+<div class="row"><div><label>Contraseña (vacía = no cambiar)</label><input id="cp" type="password" autocomplete="new-password"></div><div><label>Rol</label><select id="cr"><option value="tecnico">Técnico</option><option value="admin">Administrador</option></select></div></div>
+<button class="s" id="cs">Guardar usuario</button></div>
+<div class="card"><h3>Listas</h3><p class="m">Una opción por línea. Se comparten con todos los dispositivos.</p>
+<label>Máquinas</label><textarea id="lm"></textarea><label>Formatos</label><textarea id="lf" style="min-height:140px"></textarea>
+<button class="s" id="sv">Guardar listas</button></div></section>
+</div></main></div>
+<div id="toast"></div>
+
+<script>
+const ACC=[["ret03","Retiro de OT 03-PB"],["ret01","Retiro de OT 01-PB"],["maq","Montado en máquina"],["alm03","Almacenado en OT 03-PB"],["alm01","Almacenado en OT 01-PB"]];
+const ALERTA_H=4,IDLE_MIN=20,rg=(a,b)=>Array.from({length:b-a+1},(_,i)=>a+i);
+const A=[...[1,2,3,4,5,6,7,8,"8.1",9,10,11,"11.1",12,"12.1",13,"13.1",14,"14.1","14.2","14.3",15,16,17,"17.1",18,19,20,"20.1",21,22,"22.1",23,24,"24.1",25,26,27,"27.1"],...rg(28,44),53,61,51,72,74].map(x=>"A-"+x);
+const B=[1,2,4,"4.1",5,"5.1",30,6,7,8,9,10,11,12,13,14,15,16,17,"17.1",18,19,20].map(x=>"B-"+x);
+const C=[...rg(1,12),"12.1",...rg(13,22)].map(x=>"C-"+x);
+/* ===== CONFIGURACIÓN =====
+   Deja apiKey vacío para trabajar en MODO LOCAL (datos solo en este navegador).
+   Para compartir datos entre dispositivos, pega aquí los datos de tu proyecto de Firebase. */
+const FIREBASE={apiKey:"",authDomain:"",projectId:"",appId:""};
+let LOCAL=false;
+/* Almacenamiento local (localStorage) con la misma interfaz que usa el resto del código */
+function localDB(){LOCAL=true;
+ const get=()=>{try{return JSON.parse(localStorage.getItem("ldb"))||{}}catch(e){return{}}},put=d=>localStorage.setItem("ldb",JSON.stringify(d)),subs=[],fire=()=>subs.forEach(f=>f());
+ addEventListener("storage",fire);
+ return{collection:c=>{const q={f:null,d:1,n:1e9},o={
+   add:async d=>{const a=get();(a[c]=a[c]||{})[Date.now()+"_"+Math.random().toString(36).slice(2,7)]=d;put(a);fire()},
+   orderBy:(f,dir)=>{q.f=f;q.d=dir==="desc"?-1:1;return o},limit:n=>{q.n=n;return o},
+   onSnapshot:cb=>{const f=()=>{const a=Object.values(get()[c]||{});if(q.f)a.sort((x,y)=>(x[q.f]-y[q.f])*q.d);cb({docs:a.slice(0,q.n).map(d=>({data:()=>d}))})};subs.push(f);f()}};return o},
+  doc:p=>{const[c,i]=p.split("/");return{
+   set:async d=>{const a=get();(a[c]=a[c]||{})[i]=d;put(a);fire()},
+   onSnapshot:cb=>{const f=()=>{const d=(get()[c]||{})[i];cb({exists:!!d,data:()=>d})};subs.push(f);f()}}}}}
+/* Almacenamiento en la nube (Firebase Firestore) */
+async function fbDB(){const G="https://www.gstatic.com/firebasejs/10.12.2/",{initializeApp}=await import(G+"firebase-app.js"),F=await import(G+"firebase-firestore.js"),d=F.getFirestore(initializeApp(FIREBASE));
+ return{collection:c=>{const qs=[],r=F.collection(d,c),o={add:x=>F.addDoc(r,x),orderBy:(f,dir)=>{qs.push(F.orderBy(f,dir));return o},limit:n=>{qs.push(F.limit(n));return o},
+   onSnapshot:(cb,er)=>F.onSnapshot(qs.length?F.query(r,...qs):r,s=>cb({docs:s.docs.map(x=>({data:()=>x.data()}))}),er)};return o},
+  doc:p=>{const[c,i]=p.split("/"),r=F.doc(d,c,i);return{set:x=>F.setDoc(r,x),onSnapshot:(cb,er)=>F.onSnapshot(r,s=>cb({exists:s.exists(),data:()=>s.data()}),er)}}}}
+let L={maq:["UPS 300-1","UPS 300-2","UPS 300-4","UPS 300-6"],fmt:[...A,...B,...C]},MOV=[],USERS=null,ME=null,db=null,last={},idle;
+const $=i=>document.getElementById(i);
+const el=(t,c,x)=>{const e=document.createElement(t);if(c)e.className=c;if(x!=null)e.textContent=x;return e};
+const fmt=ts=>new Date(ts).toLocaleString("es",{day:"2-digit",month:"2-digit",year:"numeric",hour:"2-digit",minute:"2-digit"});
+const aname=k=>(ACC.find(x=>x[0]===k)||[0,k])[1];
+const lines=s=>s.split("\n").map(x=>x.trim()).filter(Boolean);
+const hex=u=>[...u].map(x=>x.toString(16).padStart(2,"0")).join("");
+const salt=()=>hex(crypto.getRandomValues(new Uint8Array(12)));
+async function hash(p,s){return hex(new Uint8Array(await crypto.subtle.digest("SHA-256",new TextEncoder().encode(s+":"+p))))}
+function toast(t,bad){const e=$("toast");e.textContent=t;e.className=bad?"e":"";e.style.display="block";clearTimeout(toast.h);toast.h=setTimeout(()=>e.style.display="none",3500)}
+function fill(sel,arr,keep){const v=sel.value;sel.replaceChildren(...arr.map(x=>el("option",null,x)));if(keep&&arr.includes(v))sel.value=v}
+function cell(tr,t,cls){const td=document.createElement("td");if(cls)td.append(el("span","b "+cls,t));else td.textContent=t;tr.append(td);return td}
+function info(m){if(!m)return{g:"none",loc:"Sin registro",cls:"none",k:"none"};
+ if(m.accion==="maq")return{g:"maq",loc:"En "+m.maquina,cls:"mq",k:"maq"+m.maquina};
+ if(m.accion==="alm03")return{g:"ot03",loc:"En OT 03-PB",cls:"ok",k:"ot03"};
+ if(m.accion==="alm01")return{g:"ot01",loc:"En OT 01-PB",cls:"ok",k:"ot01"};
+ return{g:"ret",loc:"Retirado de "+(m.accion==="ret03"?"OT 03":"OT 01"),cls:"out",k:"ret"}}
+function calc(){last={};for(const m of MOV){const k=m.formato+"|"+m.pieza;if(!last[k])last[k]=m}
+ const rows=[],cnt={ot03:0,ot01:0,maq:0,ret:0,none:0,sep:0,late:0};
+ for(const f of L.fmt){const mf=last[f+"|Formado"],ms=last[f+"|Sellado"],sep=!!(mf&&ms&&info(mf).k!==info(ms).k);if(sep)cnt.sep++;
+  for(const [p,m] of [["Formado",mf],["Sellado",ms]]){const i=info(m);cnt[i.g]++;const late=!!m&&i.g==="ret"&&Date.now()-m.ts>ALERTA_H*36e5;if(late)cnt.late++;rows.push({f,p,m,i,sep,late})}}
+ return{rows,cnt}}
+function origen(){const f=$("f").value,p=$("p").value,ps=p==="Ambos"?["Formado","Sellado"]:[p],a=ps.map(x=>info(last[f+"|"+x]).loc);
+ return a.length===1||a[0]===a[1]?a[0]:"Formado: "+a[0]+" / Sellado: "+a[1]}
+function renderAll(){if(!ME)return;const {rows,cnt}=calc(),q="";
+ $("or").value=origen();
+ const bn=$("bell");bn.replaceChildren("🔔");const al=cnt.late+cnt.sep;if(al)bn.append(el("b",null,al));
+ const ch=$("chips");ch.replaceChildren();
+ [["En OT 03","ot03","ok"],["En OT 01","ot01","ok"],["En máquina","maq","mq"],["Retirados","ret","out"],["Sin registro","none","none"],["Pares separados","sep","bad"]].forEach(([n,k,c])=>{const d=el("div","chip "+c);d.append(el("b",null,cnt[k]),n);ch.append(d)});
+ const fl=$("flt").value,st=$("st");st.replaceChildren();
+ for(const r of rows){if(fl&&(fl==="sep"?!r.sep:fl==="alert"?!(r.late||r.sep):r.i.g!==fl))continue;
+  if(q&&!(r.f+" "+r.p+" "+(r.m?r.m.tecnico:"")+" "+r.i.loc).toLowerCase().includes(q))continue;
+  const tr=document.createElement("tr");cell(tr,r.f);cell(tr,r.p);cell(tr,r.i.loc,r.i.cls);
+  cell(tr,r.m&&r.i.g!=="ot03"&&r.i.g!=="ot01"?r.m.tecnico:"–");cell(tr,(r.late?"⚠ ":"")+(r.m?fmt(r.m.ts):"–"));
+  cell(tr,r.sep?"⚠ Separados":(last[r.f+"|Formado"]&&last[r.f+"|Sellado"]?"OK":"–"),r.sep?"bad":"");st.append(tr)}
+ const hs=$("hs");hs.replaceChildren();let n=0;
+ for(const m of MOV){if(q&&!(m.formato+" "+m.pieza+" "+aname(m.accion)+" "+m.maquina+" "+m.tecnico+" "+(m.obs||"")).toLowerCase().includes(q))continue;
+  if(n++<100){const tr=document.createElement("tr");[fmt(m.ts),m.formato,m.pieza,aname(m.accion),m.maquina||"–",m.tecnico,m.obs||""].forEach(x=>cell(tr,x));hs.append(tr)}}
+ $("hc").textContent="Mostrando "+Math.min(n,100)+" de "+n+" registros";
+ renderInd(rows,cnt);renderCfg()}
+function count(a,fn){const o={};for(const x of a){const k=fn(x);if(k)o[k]=(o[k]||0)+1}return Object.entries(o).sort((a,b)=>b[1]-a[1])}
+function bars(id,arr){const c=$(id);c.replaceChildren();if(!arr.length){c.append(el("p","m","Sin datos todavía."));return}
+ for(const [k,v] of arr){const r=el("div","br"),w=el("div"),b=el("i");b.style.width=Math.max(4,v/arr[0][1]*100)+"%";w.append(b);r.append(el("span",null,k),w,el("b",null,v));c.append(r)}}
+function renderInd(rows,cnt){
+ const k=$("kp");k.replaceChildren();
+ [["Movimientos registrados",MOV.length],["Piezas retiradas o en máquina",cnt.ret+cnt.maq],["Retirados más de "+ALERTA_H+" h",cnt.late],["Pares separados",cnt.sep],["Piezas con ubicación conocida",Math.round((rows.length-cnt.none)/rows.length*100)+"%"]].forEach(([n,v])=>{const d=el("div",null,n);d.prepend(el("b",null,v));k.append(d)});
+ bars("g1",count(MOV,m=>m.tecnico).slice(0,6));bars("g4",count(MOV,m=>m.accion==="maq"&&m.maquina).slice(0,6));bars("g5",count(MOV,m=>m.formato).slice(0,5));
+ const g2=$("g2");g2.replaceChildren();const days=[];for(let i=6;i>=0;i--){const d=new Date();d.setHours(0,0,0,0);d.setDate(d.getDate()-i);days.push(d)}
+ const vals=days.map(d=>MOV.filter(m=>m.ts>=d.getTime()&&m.ts<d.getTime()+864e5).length),mx=Math.max(1,...vals);
+ days.forEach((d,i)=>{const c=el("div");const b=el("i");b.style.height=(vals[i]/mx*85)+"%";c.append(el("span",null,vals[i]),b,el("span",null,d.toLocaleDateString("es",{day:"2-digit",month:"2-digit"})));g2.append(c)});
+ const pal=["#1f5fe0","#f2a900","#2a9d5c","#8e44ad","#d32f3f"],ac=count(MOV,m=>m.accion),s=$("g3"),lg=$("g3l");s.replaceChildren();lg.replaceChildren();
+ ac.forEach(([a,v],i)=>{const b=el("i");b.style.cssText="width:"+v/MOV.length*100+"%;background:"+pal[i%5];s.append(b);const l=el("span");const sw=el("s");sw.style.background=pal[i%5];l.append(sw,aname(a)+" ("+v+")");lg.append(l)});
+ if(!ac.length)lg.textContent="Sin datos todavía.";
+ const ul=$("g6");ul.replaceChildren();const al=[];
+ rows.filter(r=>r.late).forEach(r=>al.push(r.f+" ("+r.p+") retirado por "+r.m.tecnico+" desde "+fmt(r.m.ts)));
+ [...new Set(rows.filter(r=>r.sep).map(r=>r.f))].forEach(f=>al.push(f+": formado y sellado en lugares distintos"));
+ (al.length?al.slice(0,8):["Sin alertas por ahora."]).forEach(t=>ul.append(el("li",null,t)))}
+function renderCfg(){if(ME.rol!=="admin")return;const t=$("ut");t.replaceChildren();
+ for(const u of USERS){const tr=document.createElement("tr");cell(tr,u.nombre);cell(tr,u.usuario);cell(tr,u.rol==="admin"?"Administrador":"Técnico");cell(tr,u.activo===false?"Inactivo":"Activo",u.activo===false?"none":"ok");
+  const td=document.createElement("td"),e=el("button","t","Editar"),d=el("button","t",u.activo===false?"Activar":"Desactivar");
+  e.onclick=()=>{$("cn").value=u.nombre;$("cu").value=u.usuario;$("cr").value=u.rol;$("cp").value="";scrollTo(0,document.body.scrollHeight)};
+  d.onclick=()=>saveUser({...u,activo:u.activo===false});td.append(e,d);tr.append(td);t.append(tr)}}
+const admins=()=>USERS.filter(u=>u.rol==="admin"&&u.activo!==false);
+async function saveUser(rec){
+ if(!db)return toast("Sin conexión a la base de datos.",1);
+ const was=USERS.find(x=>x.usuario===rec.usuario);
+ if(was&&was.rol==="admin"&&was.activo!==false&&(rec.rol!=="admin"||rec.activo===false)&&admins().length<2)return toast("Debe quedar al menos un administrador activo.",1);
+ if(rec.usuario===ME.usuario&&rec.activo===false)return toast("No puedes desactivar tu propio usuario.",1);
+ try{await db.doc("usuarios/"+rec.usuario).set(rec);toast("✔ Usuario guardado")}catch(e){toast("No se pudo guardar el usuario.",1)}}
+$("cs").onclick=async()=>{const u=$("cu").value.trim().toLowerCase(),n=$("cn").value.trim(),p=$("cp").value,old=USERS.find(x=>x.usuario===u);
+ if(!/^[a-z0-9._-]{3,30}$/.test(u)||!n)return toast("Nombre obligatorio y usuario de 3 a 30 caracteres (letras, números, punto, guion).",1);
+ if((!old||p)&&p.length<6)return toast("La contraseña debe tener al menos 6 caracteres.",1);
+ const rec={usuario:u,nombre:n,rol:$("cr").value,activo:old?old.activo!==false:true,salt:old?old.salt:"",hash:old?old.hash:""};
+ if(p){rec.salt=salt();rec.hash=await hash(p,rec.salt)}
+ await saveUser(rec);["cn","cu","cp"].forEach(i=>$(i).value="")};
+$("sv").onclick=async()=>{const n={maq:lines($("lm").value),fmt:lines($("lf").value)};
+ if(!n.maq.length||!n.fmt.length)return toast("Ninguna lista puede quedar vacía.",1);
+ try{await db.doc("config/listas").set(n);toast("✔ Listas guardadas")}catch(e){toast("No se pudieron guardar las listas.",1)}};
+function lists(){fill($("f"),L.fmt,1);fill($("m"),L.maq,1);$("lm").value=L.maq.join("\n");$("lf").value=L.fmt.join("\n");renderAll()}
+
+/* acceso */
+function lerr(t){const e=$("lerr");e.textContent=t;e.style.display=t?"block":"none"}
+function loginUI(){const first=USERS&&!USERS.length;$("fn").hidden=$("fp2").hidden=!first;$("lgo").textContent=first?"Crear administrador":"Iniciar sesión";
+ $("lmsg").textContent=!db?"Sin conexión a la base de datos.":USERS===null?"Conectando…":first?"Primer uso: crea el usuario administrador.":"Ingresa con tu usuario y contraseña.";if(LOCAL&&db)$("lmsg").textContent+=" Modo local: los datos se guardan solo en este dispositivo."}
+function enter(u){ME=u;try{localStorage.setItem("ses",JSON.stringify({u:u.usuario,t:Date.now()}))}catch(e){}
+ $("login").hidden=true;$("app").hidden=false;$("lp").value=$("lp2").value="";lerr("");
+ $("mn").textContent=u.nombre;$("mr").textContent=u.rol==="admin"?"Administrador":"Técnico";$("tn").value=u.nombre;$("ncfg").hidden=u.rol!=="admin";
+ go("reg");bump();lists()}
+function logout(){ME=null;clearTimeout(idle);try{localStorage.removeItem("ses")}catch(e){}$("app").hidden=true;$("login").hidden=false;loginUI()}
+function bump(){clearTimeout(idle);if(ME)idle=setTimeout(logout,IDLE_MIN*6e4)}
+["pointerdown","keydown"].forEach(e=>document.addEventListener(e,bump));
+$("out").onclick=logout;
+$("lgo").onclick=async()=>{lerr("");if(!db||USERS===null)return lerr("Aún no hay conexión con la base de datos.");
+ const u=$("lu").value.trim().toLowerCase(),p=$("lp").value;if(!u||!p)return lerr("Escribe usuario y contraseña.");
+ try{if(!USERS.length){const n=$("ln").value.trim();
+   if(!n||!/^[a-z0-9._-]{3,30}$/.test(u)||p.length<6||p!==$("lp2").value)return lerr("Completa el nombre, un usuario de 3 a 30 caracteres y una contraseña de 6 o más que coincida en ambos campos.");
+   const s=salt(),r={usuario:u,nombre:n,rol:"admin",activo:true,salt:s,hash:await hash(p,s)};await db.doc("usuarios/"+u).set(r);return enter(r)}
+  const r=USERS.find(x=>x.usuario===u);
+  if(!r||r.activo===false||await hash(p,r.salt)!==r.hash)return lerr("Usuario o contraseña incorrectos.");enter(r)}
+ catch(e){lerr("No se pudo iniciar sesión. Intenta de nuevo.")}};
+["lu","lp","lp2"].forEach(i=>$(i).onkeydown=e=>{if(e.key==="Enter")$("lgo").click()});
+
+/* navegación y registro */
+function go(s){document.querySelectorAll("#nav button").forEach(b=>b.classList.toggle("on",b.dataset.s===s));document.querySelectorAll(".sec").forEach(x=>x.classList.toggle("on",x.id==="s-"+s));scrollTo(0,0)}
+document.querySelectorAll("#nav button").forEach(b=>b.onclick=()=>go(b.dataset.s));
+$("bell").onclick=()=>{$("flt").value="alert";go("est");renderAll()};
+$("flt").onchange=renderAll;$("f").onchange=$("p").onchange=()=>$("or").value=origen();
+fill($("a"),ACC.map(x=>x[1]));$("a").onchange=()=>{$("mw").hidden=$("a").selectedIndex!==2};
+const tick=()=>{const n=new Date();$("dt").textContent="Hoy, "+n.toLocaleDateString("es",{day:"numeric",month:"short",year:"numeric"})};tick();setInterval(()=>{tick();renderAll()},6e4);
+$("go").onclick=async()=>{if(!db)return toast("Sin conexión a la base de datos.",1);
+ const ai=$("a").selectedIndex,ts=Date.now(),pz=$("p").value==="Ambos"?["Formado","Sellado"]:[$("p").value];
+ const base={ts,formato:$("f").value,accion:ACC[ai][0],tecnico:ME.nombre,maquina:ai===2?$("m").value:"",origen:origen(),obs:$("o").value.trim()};
+ $("go").disabled=true;
+ try{await Promise.all(pz.map(p=>db.collection("movimientos").add({...base,pieza:p})));$("o").value="";toast("✔ Registrado "+base.formato+" ("+pz.join(" y ")+") · "+fmt(ts))}
+ catch(e){toast("No se pudo guardar. Revisa tu conexión o permisos.",1)}
+ $("go").disabled=false};
+$("csv").onclick=async()=>{try{const q=s=>'"'+String(s||"").replace(/"/g,'""')+'"';
+ const rows=[["fecha_hora","formato","pieza","accion","origen","maquina","tecnico","obs"].join(",")].concat(MOV.map(m=>[fmt(m.ts),m.formato,m.pieza,aname(m.accion),m.origen,m.maquina,m.tecnico,m.obs].map(q).join(",")));
+ const a=document.createElement("a");a.href=URL.createObjectURL(new Blob(["\ufeff"+rows.join("\n")],{type:"text/csv"}));a.download="historico_formatos.csv";a.click()}catch(e){toast("No se pudo descargar.",1)}};
+
+/* arranque */
+fill($("f"),L.fmt);fill($("m"),L.maq);loginUI();
+(async()=>{try{db=FIREBASE.apiKey?await fbDB():localDB()}catch(e){console.error(e);db=localDB()}
+ if(!db)return loginUI();
+ db.doc("config/listas").onSnapshot(s=>{const d=s.exists?s.data():null;if(d&&d.fmt&&d.maq){L={maq:d.maq,fmt:d.fmt};lists()}},()=>{});
+ db.collection("movimientos").orderBy("ts","desc").limit(600).onSnapshot(s=>{MOV=s.docs.map(x=>x.data());renderAll()},()=>toast("No se pudo leer el histórico.",1));
+ db.collection("usuarios").onSnapshot(s=>{const first=USERS===null;USERS=s.docs.map(x=>x.data());
+  if(ME){const u=USERS.find(x=>x.usuario===ME.usuario);if(!u||u.activo===false)return logout();ME=u;renderAll()}
+  else{loginUI();if(first)try{const ses=JSON.parse(localStorage.getItem("ses")),u=ses&&USERS.find(x=>x.usuario===ses.u&&x.activo!==false);if(u&&Date.now()-ses.t<12*36e5)enter(u)}catch(e){}}},
+  ()=>{USERS=null;loginUI()});
+})();
+</script></body></html>
